@@ -42,7 +42,7 @@ const Portfolio = () => {
               <span className="work__category">{category}</span>
               <h3 className="work__title">{title}</h3>
 
-              <a href="#" className="work__button">
+              <a href="#" className="work__button" onClick={(e) => e.preventDefault()}>
                 <i className="icon-link work__button-icon"></i>
               </a>
             </div>
