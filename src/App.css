@@ -1,0 +1,23 @@
+.main {
+    margin-left: 110px;
+    padding: 0 15px;
+}
+
+@media screen and (max-width: 1024px) {
+    .main {
+        margin-left: 0;
+        padding: 0;
+    }
+}
+
+.section {
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
