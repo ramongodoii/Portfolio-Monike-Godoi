@@ -1,7 +1,7 @@
 import React from 'react';
 import "./testimonials.css";
-import Image1 from "../../assets/avatar-1.svg";
-import Image3 from "../../assets/avatar-3.svg";
+import Image1 from "../../assets/client-1.png";
+import Image3 from "../../assets/client-2.png";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import required modules
@@ -15,18 +15,18 @@ const data = [
   {
     id: 1,
     image: Image1,
-    title: "John Doe",
+    title: "Romilda Souza",
     subtitle: "Product designer at Dribble",
     comment:
-      "Neymar é muito bom 👍",
+      "O trabalho foi impecável! O design captou exatamente a essência da minha marca e superou minhas expectativas.",
   },
   {
     id: 2,
     image: Image3,
-    title: "John Doe",
+    title: "Ramon Godoi",
     subtitle: "Product designer at Dribble",
     comment:
-      "I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good luck! 👍",
+      "Entrega rápida, comunicação clara e um design que elevou a identidade da minha marca. Excelente!",
   },
 ];
 

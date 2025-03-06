@@ -22,11 +22,11 @@ const Portfolio = () => {
       <h2 className="section__title">Projetos</h2>
 
       <div className="work__filters">
-        <span className="work__item" onClick={() => filterItems("Everything")}>Everything</span>
-        <span className="work__item" onClick={() => filterItems("Creative")}>Creative</span>
-        <span className="work__item" onClick={() => filterItems("Art")}>Art</span>
-        <span className="work__item" onClick={() => filterItems("Design")}>Design</span>
-        <span className="work__item" onClick={() => filterItems("Branding")}>Branding</span>
+        <span className="work__item" onClick={() => filterItems("Everything")}>Todos</span>
+        <span className="work__item" onClick={() => filterItems("Design")}>Design Gráfico</span>
+        <span className="work__item" onClick={() => filterItems("Art")}>Artes</span>
+        <span className="work__item" onClick={() => filterItems("Game")}>Game Designer</span>
+        <span className="work__item" onClick={() => filterItems("Written")}>Escritas</span>
       </div>
 
       <div className="work__container grid">

@@ -1,0 +1,13 @@
+/* src/components/SkillsIcons.css */
+
+.skills-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os ícones */
+    gap: 10px; /* Espaçamento entre os ícones */
+  }
+  
+  .skill-icon {
+    width: 50px; /* Ajuste o tamanho dos ícones conforme necessário */
+    height: 50px;
+  }

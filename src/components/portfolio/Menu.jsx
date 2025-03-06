@@ -22,7 +22,7 @@ const Menu = [
       id: 3,
       image: Work3,
       title: "Delivery App Wireframe",
-      category: "Branding",
+      category: "Written",
     },
     {
       id: 4,
@@ -34,7 +34,7 @@ const Menu = [
       id: 5,
       image: Work5,
       title: "iMac Mockup Design",
-      category: "Creative",
+      category: "Game",
     },
     {
       id: 6,
