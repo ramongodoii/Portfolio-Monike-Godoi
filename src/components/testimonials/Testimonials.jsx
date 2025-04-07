@@ -32,11 +32,11 @@ const data = [
 
 const Testimonials = () => {
   return (
-    <section className="testimonial container section">
-      <h2 className="section__title">Client & Reviews</h2>
+    <section className="testimonial container section" id="testimonial">
+      <h2 className="section__title">Clientes & Avaliações</h2>
 
       <Swiper 
-        className="testimonial__container grid"
+        className="testimonials__container"
         modules={[Pagination]}
         spaceBetween={30}
         slidesPerView={1}
@@ -48,7 +48,7 @@ const Testimonials = () => {
           return (
             <SwiperSlide className="testimonial__item" key={id}>
               <div className="tumble">
-                <img src={image} alt="" />
+                <img src={image} alt={`Foto de ${title}`} />
               </div>
               <h3 className="testimonial__title">{title}</h3>
               <span className="subtitle">{subtitle}</span>

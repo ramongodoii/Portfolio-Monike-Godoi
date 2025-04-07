@@ -10,21 +10,21 @@ const data = [
     image: Image1,
     title: "Designer Gráfico",
     description:
-      "Descrição....",
+      " Busco equilibrar estética e funcionalidade, garantindo que cada detalhe tenha um propósito. Meu foco é criar visuais impactantes que comuniquem bem e causem a sensação certa.",
   },
   {
     id: 2,
     image: Image2,
     title: "Gamer Designer",
     description:
-      "Descrição....",
+      "Penso sempre na experiência do jogador, desenvolvendo mecânicas que sejam envolventes e contribuam para a imersão. Gosto de testar e ajustar tudo até que o jogo flua como deveria.",
   },
   {
     id: 3,
     image: Image3,
     title: "Escritora",
     description:
-      "Descrição....",
+      "Minha escrita é voltada para emoção e simbolismo. Gosto de construir histórias que envolvam, que tenham ritmo e deixem espaço para interpretação.",
   },
 ];
 

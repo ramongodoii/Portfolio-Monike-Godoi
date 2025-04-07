@@ -5,7 +5,7 @@ const Data = [
       icon: "icon-graduation",
       year: "2024 - Em andamento",
       title: "Multimídia",
-      desc: "Descrição do curso.",
+      desc: "Com foco em criação audiovisual, design, animação, edição e desenvolvimento web.",
     },
     {
       id: 2,
@@ -13,7 +13,7 @@ const Data = [
       icon: "icon-graduation",
       year: "2024 - Em andamento",
       title: "Programação de jogos digitais",
-      desc: "Descrição do curso.",
+      desc: "Com foco pessoal em game design, criação de mecânicas, narrativa interativa e desenvolvimento de experiências lúdicas.",
     },
     {
       id: 3,

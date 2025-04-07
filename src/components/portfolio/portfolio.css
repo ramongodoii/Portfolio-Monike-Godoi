@@ -16,16 +16,24 @@
     color: var(--first-color);
 }
 
-.work__container {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.875rem;
+/* Estilos para o Masonry */
+.work__masonry-grid {
+    display: flex;
+    width: 100%;
+    margin-left: -20px; /* gutter offset */
 }
-  
+
+.work__masonry-grid_column {
+    padding-left: 20px; /* gutter size */
+    background-clip: padding-box;
+}
+
 .work__card {
     position: relative;
     overflow: hidden;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
+    margin-bottom: 20px; /* espaço entre os cards */
 }
   
 .work__mask {
@@ -73,8 +81,8 @@
 .work__button {
     color: #fff;
     position: absolute;
-    bottom: 1.5rem;
-    left: 1.5rem;
+    top: 1.0rem;
+    right: 1.5rem;
     font-size: var(--h3-font-size);
     display: block;
     background-color: #ffd15c;
@@ -86,6 +94,7 @@
     line-height: 42px;
     transition: 0.3s;
     opacity: 0;
+    border: none;
 }
   
 .work__card:hover .work__button {
@@ -98,30 +107,51 @@
     transform: translateY(0);
 }
 
+/* Estilo para as imagens */
+.work__img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    transition: transform 0.3s;
+}
+
 @media screen and (max-width: 1024px) {
-    .work__container {
-        grid-template-columns: repeat(2, 330px);
-        justify-content: center;
-        row-gap: 1.875rem;
+    .work__masonry-grid {
+        margin-left: -15px; /* ajuste para telas médias */
+    }
+    
+    .work__masonry-grid_column {
+        padding-left: 15px; /* ajuste para telas médias */
+    }
+    
+    .work__card {
+        margin-bottom: 15px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .work__container {
-        grid-template-columns: 310px;
-    }
-
     .work__filters {
-        row-gap: .25rem;
+        row-gap: 0.5rem;
+        justify-content: center;
     }
 
+    .work__card {
+        margin-bottom: 15px;
+    }
 }
 
 @media screen and (max-width: 350px) {
-    .work__container {
-        grid-template-columns: 1fr;
+    .work__masonry-grid {
+        margin-left: -10px; /* ajuste para telas pequenas */
     }
     
+    .work__masonry-grid_column {
+        padding-left: 10px; /* ajuste para telas pequenas */
+    }
+    
+    .work__card {
+        margin-bottom: 10px;
+    }
 }
 
 

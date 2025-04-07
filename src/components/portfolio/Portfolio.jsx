@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "./portfolio.css";
 import Menu from "./Menu";
+import Masonry from 'react-masonry-css';
 
 const Portfolio = () => {
   const [items, setItems] = useState(Menu);
@@ -17,6 +18,13 @@ const Portfolio = () => {
     setItems(updatedItems);
   };
 
+  // Configuração dos breakpoints para o Masonry
+  const breakpointColumnsObj = {
+    default: 3,
+    1024: 2,
+    768: 1
+  };
+
   return (
     <section className="work container section" id="work">
       <h2 className="section__title">Projetos</h2>
@@ -24,12 +32,16 @@ const Portfolio = () => {
       <div className="work__filters">
         <span className="work__item" onClick={() => filterItems("Everything")}>Todos</span>
         <span className="work__item" onClick={() => filterItems("Design")}>Design Gráfico</span>
-        <span className="work__item" onClick={() => filterItems("Art")}>Artes</span>
+        <span className="work__item" onClick={() => filterItems("Arte")}>Artes</span>
         <span className="work__item" onClick={() => filterItems("Game")}>Game Designer</span>
-        <span className="work__item" onClick={() => filterItems("Written")}>Escritas</span>
+        <span className="work__item" onClick={() => filterItems("Outros")}>Outros</span>
       </div>
 
-      <div className="work__container grid">
+      <Masonry
+        breakpointCols={breakpointColumnsObj}
+        className="work__masonry-grid"
+        columnClassName="work__masonry-grid_column"
+      >
         {items.map((elem) => {
           const { id, image, title, category } = elem;
           return (
@@ -48,7 +60,7 @@ const Portfolio = () => {
             </div>
           );
         })}
-      </div>
+      </Masonry>
     </section>
   );
 };
